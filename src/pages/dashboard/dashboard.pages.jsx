@@ -41,7 +41,6 @@ export default function Dashboard() {
     fetch('https://twojsomsiad-backend.onrender.com/user/adverts', options)
       .then(response => response.json())
       .then(response => {
-        console.log(response)
         setData(response);
       });
     // .catch(err => console.error(err));
