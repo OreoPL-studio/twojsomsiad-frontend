@@ -9,6 +9,9 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 
+
+
+
 export default function Home() {
   const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -61,7 +64,7 @@ axios.request(options).then(function (response) {
   }, []);
   return (
     <div>
-      <Sidebar pageName={"Strona główna"}/>
+      <Sidebar/>
       <div className={styles.advertsBody}>
           <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>

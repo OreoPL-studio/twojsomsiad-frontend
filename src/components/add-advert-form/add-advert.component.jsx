@@ -32,6 +32,9 @@ export default function AddAdvert({onClickBtn}) {
     body: {title:"Spacer z psem", description:"Proszę wyjść z moim psem Johnym na spacer w parku Zdrojowym na pół godziny i wrócić.", city:"Nowy Sącz", date:"2022-10-26T22:04:06.652069Z"}
   };
   */
+
+
+ 
  const handleSubmit = (event) => {
    /*
    fetch('https://twojsomsiad-backend.onrender.com/advert', options)
